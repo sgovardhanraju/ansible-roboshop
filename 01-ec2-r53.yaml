@@ -6,11 +6,12 @@
     sg_id: sg-0caa92da7b80302bc
     zone_id: "Z0732355102QE6GB8XDYY"
     domain_name: "sgrdevsecops.fun"
-    instances:
-    - mongodb
-    - redis
-    - rabbitmq
-    - mysql
+    # we can pass instances through command line using -e
+    # instances:
+    # - mongodb
+    # - redis
+    # - rabbitmq
+    # - mysql
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
