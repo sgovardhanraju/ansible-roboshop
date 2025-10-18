@@ -38,7 +38,7 @@
     amazon.aws.route53:
       state: present
       zone: "{{ domain_name }}"
-      record: "{{ item.item }}.{{ domain.name }}" # mongodb.sgrdevsecops.fun
+      record: "{{ item.item }}.{{ domain_name }}" # mongodb.sgrdevsecops.fun
       type: A
       ttl: 1
       value: "{{ item.instances[0].private_ip_address }}"
