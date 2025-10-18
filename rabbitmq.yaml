@@ -1,5 +1,5 @@
 - name: setup rebbitmq server
-  hosts: rabittmq
+  hosts: rabbitmq
   become: yes
   tasks:
   - name: copy rabbitmq repo
